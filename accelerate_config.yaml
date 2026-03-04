@@ -1,0 +1,20 @@
+compute_environment: LOCAL_MACHINE
+debug: false
+
+distributed_type: NO
+
+mixed_precision: bf16
+downcast_bf16: "no"
+
+num_machines: 1
+machine_rank: 0
+
+num_processes: 1
+gpu_ids: all
+
+rdzv_backend: static
+same_network: true
+
+main_training_function: main
+
+use_cpu: false
